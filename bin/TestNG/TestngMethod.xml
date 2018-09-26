@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--  we are defining two attributes 'parallel' and 'thread-count' at suite level. As we want test methods to be executed in 
+parallel, we have provided 'methods'. And 'thread-count' attribute is to used to pass the number of maximum threads to be 
+created. -->
+<suite name="Parallel test suite" parallel="methods" thread-count="3">
+  <test name="Regression 1">
+    <classes>
+      <class name="TestNG.TestParallelOne"/>
+    </classes>
+  </test>
+</suite>

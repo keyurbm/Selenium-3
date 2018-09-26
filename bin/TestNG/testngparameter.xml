@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<!-- we have two attributes for parameter tag, the name attribute which defines name of
+the parameter, and the value attribute defines the value of the parameter. -->
+<suite name="Parameterization Test Suite">
+    <test name="Testing Parameterization">
+    	<parameter name="browser" value="Chrome" />
+    	<parameter name="username" value="testuser" />
+    	<parameter name="password" value="testpassword" />
+    	<classes>
+    	    <class name="TestNG.TestParameters" />
+    	</classes>	    
+    </test>
+</suite>
